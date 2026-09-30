@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Babel Support</title>
+  <meta name="description" content="Help, answers and contact for Babel, the on-device AI library for iPhone and iPad.">
+  <link rel="icon" href="babel-icon.png">
+  <style>
+    :root {
+      --bg: #ECECEE; --card: #FFFFFF; --line: #D4D4D8; --ink: #1B1C1F; --ink-soft: #55575E; --ink-faint: #8C8E95;
+      --orange: #FF6A13; --on-orange: #17181A;
+      --serif: "New York", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+      --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #1C1D20; --card: #26272B; --line: #393A40; --ink: #ECECEE; --ink-soft: #A9AAB0; --ink-faint: #74767D; --orange: #FF7A2B; }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 var(--sans); }
+    a { color: var(--orange); }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 0 22px 64px; }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 22px 0 8px; }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+    .brand img { width: 32px; height: 32px; border-radius: 8px; }
+    .brand span { font: 700 24px/1 var(--serif); }
+    nav .links a { color: var(--ink-soft); text-decoration: none; margin-left: 18px; font-size: 15px; }
+    h1 { font: 600 44px/1.1 var(--serif); margin: 36px 0 8px; }
+    .lead { color: var(--ink-soft); font-size: 19px; margin: 0 0 36px; }
+    h2 { font: 600 28px/1.2 var(--serif); margin: 48px 0 16px; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card { background: var(--card); border-radius: 16px; padding: 22px; }
+    .card h3 { margin: 0 0 6px; font-size: 17px; }
+    .card p { margin: 0; color: var(--ink-soft); font-size: 15px; }
+    .num { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--orange);
+           color: var(--on-orange); font-weight: 800; font-size: 14px; margin-bottom: 10px; }
+    details { background: var(--card); border-radius: 14px; margin-bottom: 10px; }
+    summary { cursor: pointer; list-style: none; padding: 18px 48px 18px 20px; font-weight: 600; position: relative; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; position: absolute; right: 20px; top: 14px; font-size: 22px; color: var(--orange); font-weight: 400; }
+    details[open] summary::after { content: "–"; }
+    details .a { padding: 0 20px 18px; color: var(--ink-soft); }
+    details .a p { margin: 0 0 10px; }
+    details .a ul { margin: 0 0 10px; padding-left: 20px; }
+    .contact { background: var(--card); border-radius: 18px; padding: 28px; text-align: center; }
+    .contact p { color: var(--ink-soft); margin: 0 0 16px; }
+    .email { display: inline-block; background: var(--orange); color: var(--on-orange); font-weight: 700; text-decoration: none;
+             padding: 13px 24px; border-radius: 999px; word-break: break-all; }
+    .tip { color: var(--ink-faint); font-size: 14px; margin-top: 14px !important; }
+    .ack { background: var(--card); border-radius: 16px; padding: 22px; font-size: 15px; color: var(--ink-soft); }
+    .ack strong { color: var(--ink); }
+    .ack p { margin: 0 0 10px; }
+    footer { margin-top: 48px; color: var(--ink-faint); font-size: 14px; border-top: 1px solid var(--line); padding-top: 20px; }
+    footer a { color: var(--ink-soft); text-decoration: none; margin-right: 16px; }
+    @media (max-width: 700px) { .steps { grid-template-columns: 1fr; } h1 { font-size: 36px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="brand"><img src="babel-icon.png" alt=""><span>Babel</span></div>
+    </nav>
+
+    <h1>Support</h1>
+    <p class="lead">Babel writes books for you on your iPhone or iPad. Here's how to get the most from it — and how to reach us.</p>
+
+    <h2>Getting started</h2>
+    <div class="steps">
+      <div class="card"><span class="num">1</span><h3>Ask for a book</h3><p>Type an idea in "What would you like to read?" and tap <strong>Your idea</strong>, or tap any cover under Discover.</p></div>
+      <div class="card"><span class="num">2</span><h3>Watch it being written</h3><p>Babel plans six chapters, then writes Chapter 1 onto the page. Start reading as soon as it appears.</p></div>
+      <div class="card"><span class="num">3</span><h3>Keep going</h3><p>At the end of a chapter, tap <strong>Write Chapter 2</strong>. Your place is saved automatically.</p></div>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+
+    <details open>
+      <summary>Does Babel need an internet connection or an account?</summary>
+      <div class="a"><p>No. The AI that writes your books is built into the app and runs entirely on your device. Babel works in airplane mode and never asks you to sign in.</p></div>
+    </details>
+
+    <details>
+      <summary>Why does writing take a while?</summary>
+      <div class="a">
+        <p>Every word is written by an AI model running on your device's own processor, not on a server. Planning takes a few seconds; a chapter can take a minute or two. Newer iPhones and iPads are noticeably faster.</p>
+        <p>You don't have to wait for a chapter to finish — start reading as soon as the first paragraph appears.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What happens if I leave a book while it's being written?</summary>
+      <div class="a">
+        <p>Writing stops the moment you go back or open another book, so it never runs in the background. Everything written so far is kept.</p>
+        <p>When you return, scroll to the end and tap <strong>Finish Chapter</strong> to complete it.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Search shows only "Your idea". Where are the suggestions?</summary>
+      <div class="a">
+        <p>Suggestions take a few seconds to appear — you'll see placeholder covers and "Babel is finding books for you…" while they load. Your own idea is ready straight away.</p>
+        <p>If you open a book before suggestions arrive, the search stops so the book can start sooner. Search again to see them.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I stop or clear a search?</summary>
+      <div class="a">
+        <p>While Babel is looking for books, the search field shows an orange <strong>Stop</strong> button — tap it to stop straight away. Then tap <strong>✕</strong> to clear the search and return to the home page, or press Return to search again.</p>
+        <p>You can also change the text at any time and press Return; the new search replaces the old one.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I change the text size or switch to the dark theme?</summary>
+      <div class="a"><p>In a book, tap <strong>Aa</strong> at the top right for Contents, text size, theme, Copy and Share. On the home screen, the moon/sun button switches themes.</p></div>
+    </details>
+
+    <details>
+      <summary>How do I jump to another chapter?</summary>
+      <div class="a"><p>Tap <strong>Aa</strong> › <strong>Contents</strong> and pick a chapter. Chapters that haven't been written yet are greyed out.</p></div>
+    </details>
+
+    <details>
+      <summary>The top bar disappeared while I was reading.</summary>
+      <div class="a"><p>A tap on the page hides the bars so you can read without distractions. Tap the page again to bring them back.</p></div>
+    </details>
+
+    <details>
+      <summary>How do I remove a book from my library?</summary>
+      <div class="a"><p>On the home screen, press and hold the book's cover under <strong>Your Library</strong> and choose <strong>Remove from Library</strong>.</p></div>
+    </details>
+
+    <details>
+      <summary>Where are my books stored? Will I lose them?</summary>
+      <div class="a">
+        <p>Your books are stored only on your device and saved as they're written, so they survive the app being closed. They are deleted if you delete Babel.</p>
+        <p>Like other app data, they can be included in your own iCloud or computer backup of the device, and restored with it.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Is what Babel writes accurate?</summary>
+      <div class="a">
+        <p>Babel's books are generated by AI. Treat them as reading for enjoyment and ideas, not as a reference: they can contain mistakes, invented facts, and inconsistencies between chapters.</p>
+        <p>Nothing Babel writes is medical, legal, financial or other professional advice.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Which devices are supported?</summary>
+      <div class="a"><p>iPhone and iPad running iOS / iPadOS 16.4 or later. Babel needs about 800 MB of free storage for the built-in AI model.</p></div>
+    </details>
+
+    <h2>Still need help?</h2>
+    <div class="contact">
+      <p>Questions, bugs or ideas — write to us and we'll get back to you.</p>
+      <a class="email" href="mailto:sivavimelrajhen@gmail.com?subject=Babel%20support">sivavimelrajhen@gmail.com</a>
+      <p class="tip">It helps to include your device model, iOS version, and what you asked Babel to write.</p>
+    </div>
+
+    <h2>Acknowledgements</h2>
+    <div class="ack">
+      <p><strong>Built with Llama.</strong></p>
+      <p>Babel's on-device writing model is Llama 3.2. Llama 3.2 is licensed under the Llama 3.2 Community License, Copyright © Meta Platforms, Inc. All Rights Reserved.</p>
+      <p>Read the <a href="https://www.llama.com/llama3_2/license/">Llama 3.2 Community License</a> and the <a href="https://www.llama.com/llama3_2/use-policy/">Acceptable Use Policy</a>.</p>
+    </div>
+
+    <footer>
+      <a href="mailto:sivavimelrajhen@gmail.com">Contact</a>
+    </footer>
+  </div>
+</body>
+</html>
